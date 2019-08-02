@@ -1,0 +1,50 @@
+{
+  "name": "@brecert/pan-zoom",
+  "description": "Pan and zoom events for any element",
+  "version": "3.4.1",
+  "license": "MIT",
+  "files": [
+    "dist-*/",
+    "bin/"
+  ],
+  "pika": true,
+  "sideEffects": false,
+  "keywords": [
+    "pan",
+    "zoom",
+    "pinch",
+    "touch",
+    "canvas",
+    "webgl"
+  ],
+  "homepage": "https://github.com/brecert/pan-zoom#readme",
+  "bugs": {
+    "url": "https://github.com/brecert/pan-zoom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brecert/pan-zoom.git"
+  },
+  "dependencies": {
+    "has-passive-events": "^1.0.0",
+    "impetus": "^0.8.3",
+    "mouse-wheel": "^1.2.0",
+    "raf": "^3.4.0",
+    "touch-pinch": "^1.0.1",
+    "touch-position": "^2.0.0"
+  },
+  "devDependencies": {
+    "@pika/plugin-build-node": "^0.4.0",
+    "@pika/plugin-build-web": "^0.4.0",
+    "@pika/plugin-ts-standard-pkg": "^0.4.0",
+    "budo": "^11.6.3",
+    "eslint": "^3.8.1",
+    "regl": "^1.3.1",
+    "regl-scatter2d": "^3.0.0",
+    "typescript": "^3.5.3"
+  },
+  "source": "dist-src/index.js",
+  "types": "dist-types/index.d.ts",
+  "main": "dist-node/index.js",
+  "module": "dist-web/index.js"
+}
