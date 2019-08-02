@@ -33,6 +33,9 @@
       ],
       [
         "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-bundle-web"
       ]
     ]
   },
@@ -53,6 +56,7 @@
   "devDependencies": {
     "@pika/plugin-build-node": "^0.4.0",
     "@pika/plugin-build-web": "^0.4.0",
+    "@pika/plugin-bundle-web": "^0.5.1",
     "@pika/plugin-ts-standard-pkg": "^0.4.0",
     "budo": "^11.6.3",
     "eslint": "^3.8.1",
