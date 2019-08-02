@@ -2,23 +2,20 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var Impetus = _interopDefault(require('impetus'));
+var wheel = _interopDefault(require('mouse-wheel'));
+var touchPinch = _interopDefault(require('touch-pinch'));
+var position = _interopDefault(require('touch-position'));
+var raf = _interopDefault(require('raf'));
+var hasPassive = _interopDefault(require('has-passive-events'));
+
 /**
  * @module  pan-zoom
  *
  * Events for pan and zoom
  */
-const Impetus = require('impetus');
-
-const wheel = require('mouse-wheel');
-
-const touchPinch = require('touch-pinch');
-
-const position = require('touch-position');
-
-const raf = require('raf');
-
-const hasPassive = require('has-passive-events');
-
 function panZoom(target, cb) {
   if (target instanceof Function) {
     cb = target;

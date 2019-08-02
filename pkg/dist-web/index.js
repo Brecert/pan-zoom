@@ -1,20 +1,15 @@
+import Impetus from 'impetus';
+import wheel from 'mouse-wheel';
+import touchPinch from 'touch-pinch';
+import position from 'touch-position';
+import raf from 'raf';
+import hasPassive from 'has-passive-events';
+
 /**
  * @module  pan-zoom
  *
  * Events for pan and zoom
  */
-var Impetus = require('impetus');
-
-var wheel = require('mouse-wheel');
-
-var touchPinch = require('touch-pinch');
-
-var position = require('touch-position');
-
-var raf = require('raf');
-
-var hasPassive = require('has-passive-events');
-
 function panZoom(target, cb) {
   if (target instanceof Function) {
     cb = target;

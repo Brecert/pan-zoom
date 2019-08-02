@@ -1,31 +1,21 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-  typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global['pan-zoom'] = {}));
-}(this, function (exports) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('impetus'), require('mouse-wheel'), require('touch-pinch'), require('touch-position'), require('raf'), require('has-passive-events')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'impetus', 'mouse-wheel', 'touch-pinch', 'touch-position', 'raf', 'has-passive-events'], factory) :
+  (global = global || self, factory(global['pan-zoom'] = {}, global.Impetus, global.wheel, global.touchPinch, global.position, global.raf, global.hasPassive));
+}(this, function (exports, Impetus, wheel, touchPinch, position, raf, hasPassive) { 'use strict';
+
+  Impetus = Impetus && Impetus.hasOwnProperty('default') ? Impetus['default'] : Impetus;
+  wheel = wheel && wheel.hasOwnProperty('default') ? wheel['default'] : wheel;
+  touchPinch = touchPinch && touchPinch.hasOwnProperty('default') ? touchPinch['default'] : touchPinch;
+  position = position && position.hasOwnProperty('default') ? position['default'] : position;
+  raf = raf && raf.hasOwnProperty('default') ? raf['default'] : raf;
+  hasPassive = hasPassive && hasPassive.hasOwnProperty('default') ? hasPassive['default'] : hasPassive;
 
   function _newArrowCheck(innerThis, boundThis) {
     if (innerThis !== boundThis) {
       throw new TypeError("Cannot instantiate an arrow function");
     }
   }
-
-  /**
-   * @module  pan-zoom
-   *
-   * Events for pan and zoom
-   */
-  var Impetus = require('impetus');
-
-  var wheel = require('mouse-wheel');
-
-  var touchPinch = require('touch-pinch');
-
-  var position = require('touch-position');
-
-  var raf = require('raf');
-
-  var hasPassive = require('has-passive-events');
 
   function panZoom(target, cb) {
     var _this = this;

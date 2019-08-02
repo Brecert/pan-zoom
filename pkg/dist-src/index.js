@@ -3,12 +3,12 @@
  *
  * Events for pan and zoom
  */
-const Impetus = require('impetus');
-const wheel = require('mouse-wheel');
-const touchPinch = require('touch-pinch');
-const position = require('touch-position');
-const raf = require('raf');
-const hasPassive = require('has-passive-events');
+import Impetus from 'impetus';
+import wheel from 'mouse-wheel';
+import touchPinch from 'touch-pinch';
+import position from 'touch-position';
+import raf from 'raf';
+import hasPassive from 'has-passive-events';
 export default function panZoom(target, cb) {
     if (target instanceof Function) {
         cb = target;
