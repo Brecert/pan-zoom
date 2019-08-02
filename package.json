@@ -38,7 +38,7 @@
   },
   "scripts": {
     "build": "pika-pack build",
-    "test": "budo tests/index.js",
+    "dev": "budo tests/index.js",
     "version": "npm run build"
   },
   "homepage": "https://github.com/brecert/pan-zoom#readme",
