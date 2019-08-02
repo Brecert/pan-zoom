@@ -1,7 +1,7 @@
 {
   "name": "@brecert/pan-zoom",
   "description": "Pan and zoom events for any element",
-  "version": "3.4.1",
+  "version": "3.5.0",
   "license": "MIT",
   "files": [
     "dist-*/",
