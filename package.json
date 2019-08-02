@@ -1,6 +1,6 @@
 {
   "name": "@brecert/pan-zoom",
-  "version": "3.5.0",
+  "version": "3.5.1",
   "description": "Pan and zoom events for any element",
   "repository": {
     "type": "git",
