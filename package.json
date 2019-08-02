@@ -1,6 +1,6 @@
 {
   "name": "@brecert/pan-zoom",
-  "version": "3.5.1",
+  "version": "3.5.2",
   "description": "Pan and zoom events for any element",
   "repository": {
     "type": "git",
@@ -33,7 +33,9 @@
       ],
       [
         "@pika/plugin-build-umd",
-        { "name": "pan-zoom" }
+        {
+          "name": "pan-zoom"
+        }
       ],
       [
         "@pika/plugin-build-web"
