@@ -32,6 +32,10 @@
         "@pika/plugin-build-node"
       ],
       [
+        "@pika/plugin-build-umd",
+        { "name": "pan-zoom" }
+      ],
+      [
         "@pika/plugin-build-web"
       ],
       [
@@ -55,6 +59,7 @@
   },
   "devDependencies": {
     "@pika/plugin-build-node": "^0.4.0",
+    "@pika/plugin-build-umd": "^0.5.1",
     "@pika/plugin-build-web": "^0.4.0",
     "@pika/plugin-bundle-web": "^0.5.1",
     "@pika/plugin-ts-standard-pkg": "^0.4.0",
